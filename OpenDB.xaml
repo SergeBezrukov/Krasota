@@ -1,0 +1,30 @@
+﻿<Window x:Class="Krasota.OpenDB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Krasota"
+        mc:Ignorable="d"
+        Title="OpenDB" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="Red" Offset="1"/>
+                <GradientStop Color="White" Offset="0.33"/>
+                <GradientStop Color="#FE0004FF" Offset="0.33"/>
+                <GradientStop Color="#FE0004FF" Offset="0.665"/>
+                <GradientStop Color="#FEFF0000" Offset="0.67"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="l_tableWork"    Content="Работа с таблицами БД" HorizontalAlignment="Left" Height="37" Margin="202,31,0,0"  VerticalAlignment="Top"    Width="256" FontSize="20" FontWeight="Bold"/>
+
+        <Button x:Name="b_client"      Content="Клиенты"               HorizontalAlignment="Left" Height="33" Margin="48,94,0,0"   VerticalAlignment="Top"    Width="352" FontSize="20" FontWeight="Bold" Click="b_client_Click"/>
+        <Button x:Name="b_typeService" Content="Типы услуг"            HorizontalAlignment="Left" Height="33" Margin="48,147,0,0"  VerticalAlignment="Top"    Width="352" FontSize="20" FontWeight="Bold" Click="b_typeService_Click"/>
+        <Button x:Name="b_master"      Content="Мастера"               HorizontalAlignment="Left" Height="33" Margin="48,200,0,0"  VerticalAlignment="Top"    Width="352" FontSize="20" FontWeight="Bold" Click="b_master_Click"/>
+        <Button x:Name="b_service"     Content="Услуги"                HorizontalAlignment="Left" Height="33" Margin="48,259,0,0"  VerticalAlignment="Top"    Width="352" FontSize="20" FontWeight="Bold" Click="b_service_Click"/>
+        <Button x:Name="b_appoint"     Content="Оказание услуги"       HorizontalAlignment="Left" Height="33" Margin="48,316,0,0"  VerticalAlignment="Top"    Width="352" FontSize="20" FontWeight="Bold" Click="b_appoint_Click"/>
+        <Button x:Name="b_returnO"     Content="Вернуться"             HorizontalAlignment="Left" Height="33" Margin="603,347,0,0" VerticalAlignment="Top"    Width="149" FontSize="20" FontWeight="Bold" Click="b_returnO_Click"/>
+
+    </Grid>
+</Window>

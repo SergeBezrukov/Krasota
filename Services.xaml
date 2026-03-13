@@ -1,0 +1,41 @@
+﻿<Window x:Class="Krasota.Services"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Services" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="Red" Offset="1"/>
+                <GradientStop Color="Red" Offset="0.67"/>
+                <GradientStop Color="#FF0700FF" Offset="0.665"/>
+                <GradientStop Color="#FF0700FF" Offset="0.335"/>
+                <GradientStop Color="White" Offset="0.33"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="l_tabS" Content="Услуги" HorizontalAlignment="Center" Height="37" Margin="0,43,0,0" VerticalAlignment="Top" Width="108" FontSize="20" FontWeight="Bold"/>
+
+        <DataGrid x:Name="serviceCell"
+                  ItemsSource="{Binding ServicesClass}" ColumnWidth="*"
+                  HorizontalAlignment="Left" Height="136" Margin="38,199,0,0" VerticalAlignment="Top" 
+                  Width="716" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Код" Binding="{Binding ServCode}" />
+                <DataGridTextColumn Header="Название" Binding="{Binding ServName}" />
+                <DataGridTextColumn Header="Цена" Binding="{Binding ServPrice}" />
+                <DataGridTextColumn Header="Длительность" Binding="{Binding ServDuration}" />
+                <DataGridTextColumn Header="Тип услуги" Binding="{Binding ServTypeCode}" />
+                <DataGridTextColumn Header="Активность" Binding="{Binding ServActivity}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="b_serviceDelete" Content="Удалить" HorizontalAlignment="Left" Height="37" Margin="420,123,0,0" VerticalAlignment="Top" Width="136" FontSize="16" FontWeight="Bold" Background="#FFEDEBA1" Click="b_serviceDelete_Click"/>
+        <Button x:Name="b_serviceChange" Content="Изменить" HorizontalAlignment="Left" Height="37" Margin="593,123,0,0" VerticalAlignment="Top" Width="136" FontSize="16" FontWeight="Bold" Background="#FFF1EFA8" Click="b_serviceChange_Click"/>
+        <Button x:Name="b_serviceReturn" Content="Вернуться" HorizontalAlignment="Left" Height="37" Margin="636,360,0,0" VerticalAlignment="Top" Width="136" FontSize="16" FontWeight="Bold" Background="#FFEFEDA9" Click="b_serviceReturn_Click"/>
+        <Button x:Name="b_serviceAdd" Content="Добавить" HorizontalAlignment="Left" Height="37" Margin="38,123,0,0" VerticalAlignment="Top" Width="136" FontSize="16" FontWeight="Bold" Background="#FFEFEDA9" Click="b_serviceAdd_Click"/>
+        <Button x:Name="b_serviceShow" Content="Показать" HorizontalAlignment="Left" Height="37" Margin="219,123,0,0" VerticalAlignment="Top" Width="136" FontSize="16" FontWeight="Bold" Background="#FFEFEDA9" Click="b_serviceShow_Click"/>
+    </Grid>
+</Window>

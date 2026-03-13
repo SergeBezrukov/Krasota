@@ -1,0 +1,21 @@
+﻿<Window x:Class="Krasota.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Krasota"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Cursor="SizeNWSE">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Без названия.png"/>
+        </Grid.Background>
+        <Label x:Name="l_1" Content="Красотка" HorizontalAlignment="Left" Margin="330,50,0,0" VerticalAlignment="Top" Width="107" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="l_2" Content="Работа с БД" HorizontalAlignment="Left" Margin="84,96,0,0" VerticalAlignment="Top" Width="139" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="l_3" Content="Ежедневно" HorizontalAlignment="Left" Margin="560,96,0,0" VerticalAlignment="Top" Width="136" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="b_db" Content="Открыть БД" HorizontalAlignment="Left" Height="35" Margin="84,226,0,0" VerticalAlignment="Top" Width="139" FontSize="20" FontWeight="Bold" Click="b_db_Click"/>
+        <Button x:Name="b_work" Content="Администратор салона" HorizontalAlignment="Left" Height="35" Margin="484,217,0,0" VerticalAlignment="Top" Width="262" FontSize="20" FontWeight="Bold" Click="b_work_Click"/>
+        <Button x:Name="b_exit" Content="Выход" HorizontalAlignment="Left" Height="35" Margin="314,331,0,0" VerticalAlignment="Top" Width="139" FontSize="20" FontWeight="Bold" Click="b_exit_Click"/>
+
+    </Grid>
+</Window>
